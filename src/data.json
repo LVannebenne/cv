@@ -1,0 +1,152 @@
+{
+  "data": {
+    "sentences": [
+      "Fast and versatile worker",
+      "Passionate about new technologies",
+      "Strong attraction for Backend and server side"
+    ],
+    "workExperience": [
+      {
+        "year": 2019,
+        "description": "Trainee - Junior web developper ",
+        "location": "... in your company ? ",
+        "details": "Looking for a great trainee position, motivated to learn-a-lot with great people."
+      },
+      {
+        "year": 2018,
+        "description": "Animator / trainer (Espace Public Numérique)",
+        "location": "CPAS @ Flémalle",
+        "details": [
+          "Reception of participants in the various workshops.",
+          "Administrative procedures, maintaining user files.",
+          "Computers maintenance.",
+          "Writing of computer lessons for different target audiences.",
+          "Interventions and animations on IT, digital and new technologies."
+        ]
+      },
+      {
+        "year": 2017
+      },
+      {
+        "year": 2016,
+        "description": "Trainee - IT technician",
+        "location": "Wan SPRL @ Seraing",
+        "details": [
+          "Preparation and customization of new devices.",
+          "Hardware/electronic repairs (PC, Laptops, tablets, smartphones...).",
+          "Software repairs.",
+          "Hardware assemblies.",
+          "Setups and deployments (Sysprep)."
+        ]
+      },
+      {
+        "year": 2013,
+        "description": "Temporary Job - Versatile worker in Retirement Home",
+        "location": "@ Neupré"
+      }
+    ],
+    "training": [
+      {
+        "year": 2019,
+        "description": "Junior web developper",
+        "location": "BeCode @ Liège"
+      },
+      {
+        "year": 2018
+      },
+      {
+        "year": 2017
+      },
+      {
+        "year": 2016,
+        "description": "CQ06 (Certificate)- IT Technician",
+        "location": "IPEPS @ Seraing(technique)",
+        "details": [
+          "Diplôme obtenu en Juin 2016 avec \"La plus grande distinction\"",
+          "Mon travail de fin d'études intitulé \"Routines de maintenance automatisée avec PowerShell\" est disponible et consultable sur internet:"
+        ],
+        "link": "https://goo.gl/aet87o"
+      },
+      {
+        "year": 2015
+      },
+      {
+        "year": 2014,
+        "description": "IT Technician (Secondary school)",
+        "location": "IPEPS @ Seraing(technique)"
+      },
+      {
+        "year": 2013,
+        "description": "Basic Management Certificate",
+        "location": "IEPSCF @ Grace-Hollogne"
+      }
+    ],
+    "skillsAcquired": [
+      "HTML",
+      "CSS",
+      "PHP",
+      "Git",
+      "Javascript",
+      "Photoshop",
+      "Illustrator",
+      "Sass",
+      "MySQL",
+      "Apache2",
+      "PhpMyAdmin",
+      "GitHub",
+      "Bootstrap",
+      "REST Api"
+    ],
+    "skillsExperience": [
+      "PostgreSQL",
+      "NoSQL",
+      "MongoDB",
+      "Laravel",
+      "React.js",
+      "Node.js",
+      "Vue.js",
+      "React Native",
+      "Angular 7",
+      "Docker",
+      "Symphony",
+      "Twig",
+      "TypeScript",
+      "GraphQL"
+    ],
+    "skillsLearn": [
+      "Python",
+      "Go",
+      "AWS",
+      "Drupal",
+      "Electron",
+      "Kubernetes",
+      "Cloudflare",
+      "And many others..."
+    ],
+    "goals": [
+      "I am currently looking for a junior back-end or fullstack junior web developer position as a priority.",
+      "However, I am interested in developing my front-end skills as well.",
+      "I would like to gain more experience and work on various projects.",
+      "I have strong affinity with databases and large-scale data manipulation."
+    ],
+    "otherSkills": [
+      "Blender 3D (modeling, texturing, rigging)",
+      "Volunteer sysadmin for video games servers (Minecraft, Ark, Life is feudal, Rust..)",
+      "Management and animation of Gaming Communities",
+      "Cooking and pastry.",
+      "Fitness(bodybuilding)"
+    ],
+    "languages": ["French (native)", "English (pretty fluent, B2 level)"],
+    "contact": {
+      "firstName": "Lindsay",
+      "lastName": "Vannebenne",
+      "dateOfBirth": "13/05/1991",
+      "adress": "Rue capitaine 4/003",
+      "postCode": "4020",
+      "city": "Liège",
+      "phone": "0497/19.30.48",
+      "email": "lindsay.vannebenne@gmail.com"
+    },
+    "subsides": ["APE", "SESAM", "SINE", "PFI"]
+  }
+}
