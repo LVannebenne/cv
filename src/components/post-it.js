@@ -1,4 +1,5 @@
 import React from "react";
+import Item from "./item";
 
 export default function postIt(props) {
     return (
@@ -6,9 +7,7 @@ export default function postIt(props) {
             <h4 className={"title"}>{props.title}</h4>
             <div className={"items"}>
                 {props.items.map(item => (
-                    <span className={"item"} key={item}>
-                        {item}
-                    </span>
+                    <Item className={"item"} key={item} item={item} />
                 ))}
             </div>
         </div>

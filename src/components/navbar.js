@@ -8,13 +8,13 @@ export default function navbar() {
                 <Link to={`/skills`}>{"Skills"}</Link>
             </div>
             <div>
-                <Link to={`/experience`}>{"Experience && Training"}</Link>
+                <Link to={`/experience`}>{"Experience & Training"}</Link>
             </div>
             <div>
                 <Link to={`/projects`}>{"Projects"}</Link>
             </div>
             <div>
-                <Link to={`/about`}>{"About me"}</Link>
+                <Link to={`/about`}>{"About me & contact"}</Link>
             </div>
         </div>
     );

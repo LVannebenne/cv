@@ -1,11 +1,7 @@
 import React from "react";
 
 function item(props) {
-    return (
-        <div className={props.className}>
-            <p>{props.data}</p>
-        </div>
-    );
+    return <span className={props.className}>{props.item}</span>;
 }
 
 export default item;

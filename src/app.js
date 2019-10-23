@@ -15,7 +15,10 @@ function App() {
                 <Switch>
                     <div className={"content"}>
                         <Route exact path={"/"}>
-                            <div>{"Empty"}</div>
+                            <Skills />
+                            <Experiences />
+                            <Projects />
+                            <About />
                         </Route>
                         <Route exact path={"/skills"}>
                             <Skills />

@@ -134,7 +134,7 @@
       "Volunteer sysadmin for video games servers (Minecraft, Ark, Life is feudal, Rust..)",
       "Management and animation of Gaming Communities",
       "Cooking and pastry.",
-      "Fitness(bodybuilding)"
+      "Fitness (bodybuilding)"
     ],
     "languages": ["French (native)", "English (pretty fluent, B2 level)"],
     "contact": {
@@ -147,6 +147,84 @@
       "phone": "0497/19.30.48",
       "email": "lindsay.vannebenne@gmail.com"
     },
-    "subsides": ["APE", "SESAM", "SINE", "PFI"]
+    "subsides": ["APE", "SESAM", "SINE", "PFI"],
+    "projects": [
+      {
+        "title": "Back My books API",
+        "team": "Victor Philippe, Michael Jacquemart",
+        "description": "Back-end API for library management.",
+        "technologies": [
+          "Apollo Server",
+          "Apollo Client",
+          "GraphQL",
+          "Sequelize",
+          "PostgreSQL",
+          "Node.Js",
+          "JWT",
+          "Babel",
+          "Docker"
+        ],
+        "url": "back-my-books-project.herokuapp.com",
+        "repository": "https://github.com/LVannebenne/back-my-books",
+        "dateStart": "03/10/2019"
+      },
+      {
+        "title": "Technological Watch about SQL injections",
+        "description": "Website and DB made for demo purposes. Database is not active, use docker in local to test it.",
+        "technologies": ["PHP", "MySQL", "PhpMyAdmin", "HTML", "CSS", "Docker"],
+        "url": "http://sql-injection-techwatch.herokuapp.com/",
+        "repository": "https://github.com/LVannebenne/sql-injection",
+        "dateStart": "10/10/2019"
+      },
+      {
+        "title": "Trouvkach",
+        "description": "Nearby ATM locator application",
+        "team": "Florence Vermeerberghen, Fabian Pirghaye",
+        "technologies": [
+          "Node.Js",
+          "React.Js",
+          "Express.Js",
+          "ESlint",
+          "Prettier",
+          "Babel",
+          "Webpack"
+        ],
+        "url": "trouvkach-tokyohotel.herokuapp.com/",
+        "repository": "https://github.com/Flovermeer/trouvKach/",
+        "dateStart": "09/09/2019"
+      },
+      {
+        "title": "Pomodoro Timer",
+        "description": "Simple configurable timer for working time.",
+        "technologies": ["React.Js", "HTML", "CSS"],
+        "url": "lvannebenne-pomodoro.netlify.com",
+        "repository": "https://github.com/LVannebenne/pomodoro",
+        "dateStart": "02/09/2019"
+      },
+      {
+        "title": "vCard on NPM",
+        "description": "vCard in console (use npx @lvannebenne/vcard to display). Click on image to see the package on npmjs.com",
+        "technologies": ["Node.Js"],
+        "url": "www.npmjs.com/package/@lvannebenne/vcard",
+        "repository": "https://github.com/LVannebenne/vcard",
+        "dateStart": "27/08/2019"
+      },
+      {
+        "title": "getHolidays - Command line Interface (CLI)",
+        "description": "CLI tool that display legal holidays with some options : Year, country.. and it renders with some fancy colors & typos in console. Use npx @lvannebenne/get-holidays or go on npmjs.com for more information.",
+        "technologies": ["Node.Js"],
+        "url": "www.npmjs.com/package/@lvannebenne/get-holidays",
+        "repository": "https://github.com/LVannebenne/get-holidays-CLI",
+        "dateStart": "27/08/2019"
+      },
+      {
+        "title": "Todo's",
+        "description": "",
+        "technologies": ["Laravel", "PHP", "Vue.Js", "JavaScript", "Composer"],
+        "url": "www.npmjs.com/package/@lvannebenne/get-holidays",
+        "repository": "https://github.com/LVannebenne/todo-Laravel",
+        "dateStart": "27/08/2019"
+      }
+    ]
   }
 }

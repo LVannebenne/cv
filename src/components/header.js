@@ -15,9 +15,9 @@ export default function header() {
                 />
             </div>
             <div>
-                <h2 className={"title"}>
+                <h1 className={"title"}>
                     <Link to={"/"}>{"Junior Web Developper"}</Link>
-                </h2>
+                </h1>
                 <h5>
                     {data.sentences.map(sentence => (
                         <span key={sentence}>{sentence}</span>

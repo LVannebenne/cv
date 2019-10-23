@@ -8,12 +8,14 @@
 
 .app-background {
     background-image: url("./img/background.jpg");
+    background-blend-mode: soft-light;
+    background-color: #462062;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     min-height: 120vh;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: #462062;
     z-index: -5;
 }
 
@@ -29,7 +31,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     margin: 0 auto 1rem auto;
     .title {
         font-size: 4rem;
@@ -44,7 +46,7 @@
     width: 20vw;
     border-radius: 50%;
     border: 0.25rem solid white;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
 }
 .title {
     text-align: center;
@@ -71,11 +73,12 @@
     div {
         font-size: 1.8rem;
         padding: 10px;
-        background-color: rgba(255, 255, 255, 0.7);
         margin: 2px;
         display: flex;
         justify-content: center;
         align-items: center;
+        border: 0.2rem solid #462062;
+        background-color: rgba(255, 255, 255, 0.3);
         a,
         a:link,
         a:hover,
@@ -87,9 +90,9 @@
         &:hover {
             a {
                 color: #6b3c8d;
-                text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
             }
             transform: translate(0, -2px);
+            background-color: rgba(255, 255, 255, 0.7);
         }
     }
 }
@@ -98,9 +101,7 @@
     width: 80vw;
     margin: auto;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.5);
     color: #462062;
-    padding: 2rem;
     font-size: 1.8rem;
 }
 
@@ -120,6 +121,8 @@
     width: 300px;
     min-height: 300px;
     border: 1px solid $borderColor;
+    border-top: 0.2rem outset $borderColor;
+    border-left: 0.2rem outset $borderColor;
     border-bottom-right-radius: 60px 5px;
     background: $colorDark; /* Old browsers */
     background: -moz-linear-gradient(
@@ -182,6 +185,7 @@ h5 {
     text-align: center;
     width: 90%;
     margin: auto;
+    font-size: 1.8rem;
     span + span:before {
         content: " - ";
     }
@@ -275,6 +279,7 @@ h5 {
 
 .align-end {
     justify-content: end;
+    text-align: end;
     .year-bubble {
         order: 2;
     }
@@ -282,18 +287,19 @@ h5 {
 
 .identity {
     padding: 2rem;
-    width: auto;
+    width: 80%;
+    margin: 2rem auto;
     font-size: 2rem;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 2px 2px 1px #000;
     p {
         svg {
-            position: absolute;
-            left: 3rem;
+            position: relative;
+            left: 0.5rem;
         }
         span {
-            padding-left: 4rem;
+            padding-left: 2rem;
         }
     }
     img {
@@ -303,16 +309,80 @@ h5 {
     }
 }
 
+.project {
+    padding: 20px;
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+h2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.wrapper {
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+}
+
+.github {
+    &:link,
+    &:active,
+    &:hover,
+    &:visited {
+        text-decoration: none;
+        color: white;
+        background-color: #222;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+h3 {
+    text-align: center;
+}
+
+.tags {
+    display: flex;
+    flex-flow: row wrap;
+    .item {
+        font-weight: 700;
+        margin: 2px;
+        padding: 5px;
+        padding-right: 10px;
+        display: inline-block;
+        background-color: #462062;
+        color: #ffffff;
+    }
+}
+
+.element,
 .blockquote {
-    padding: 20px;
-    margin: 5px;
-    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0 5px;
+    &:before {
+        content: "- ";
+    }
 }
 
-.languages,
-.other-skills {
-    padding: 20px;
-}
+@media screen and (max-width: 768px) {
+    .flex-row {
+        flex-direction: column;
+    }
+    .col-50 {
+        align-content: center;
+        justify-content: center;
 
-.skill {
+        width: 100%;
+        padding: 1rem;
+        a {
+            img {
+                margin: auto;
+                display: block;
+            }
+        }
+    }
 }
