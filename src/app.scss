@@ -343,17 +343,14 @@ h5 {
 
 .identity {
     display: flex;
+    justify-content: space-between;
     padding: 2rem;
     width: 90%;
     margin: 2rem auto;
     font-size: 1.5rem;
     background-color: $lightColor;
     div {
-        width: 33%;
-        img {
-            display: block;
-            margin: auto;
-        }
+        width: 45%;
         p {
             svg {
                 position: relative;
@@ -455,6 +452,14 @@ h3 {
     #skills .flex-row:not(:first-child) > div {
         width: 100%;
     }
+    .identity {
+        .profilePic {
+            display: none;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -514,6 +519,9 @@ h3 {
         }
         .profilePic {
             display: none;
+            img {
+                width: 100%;
+            }
         }
     }
     .github-corner:hover .octo-arm {

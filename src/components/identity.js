@@ -13,7 +13,6 @@ import {
     faTwitter,
     faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import Face from "../img/Lin-nb.jpg";
 
 function identity(props) {
     return (
@@ -48,9 +47,6 @@ function identity(props) {
                     <FontAwesomeIcon icon={faAt} />
                     <span>{props.data.email}</span>
                 </p>
-            </div>
-            <div>
-                <img src={Face} className={"profilePic"} />
             </div>
             <div className={"social-media"}>
                 <span>
