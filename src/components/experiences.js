@@ -4,7 +4,7 @@ import Exp from "./exp";
 
 export default function experience() {
     return (
-        <div className={"wrapper"}>
+        <div id={"experiences"} className={"wrapper"}>
             <div className={"flex-row"}>
                 <h2>{"Experiences && Trainings timelines"}</h2>
             </div>

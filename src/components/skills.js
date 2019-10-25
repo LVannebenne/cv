@@ -4,7 +4,7 @@ import {data} from "../data.json";
 
 export default function skills() {
     return (
-        <div className={"wrapper"}>
+        <div id={"skills"} className={"wrapper"}>
             <div className={"flex-row"}>
                 <h2>{"Skills"}</h2>
             </div>
@@ -15,12 +15,12 @@ export default function skills() {
                     items={data.skillsAcquired}
                 />
                 <PostIt
-                    className={"post-it-pink"}
+                    className={"post-it"}
                     title={"Some Experience with"}
                     items={data.skillsExperience}
                 />
                 <PostIt
-                    className={"post-it-blue"}
+                    className={"post-it"}
                     title={"Wanna learn.."}
                     items={data.skillsLearn}
                 />

@@ -4,7 +4,7 @@ import {data} from "../data.json";
 
 function projects() {
     return (
-        <div className={"wrapper"}>
+        <div id={"projects"} className={"wrapper"}>
             <div className={"flex-row"}>
                 <h2>{"Projects"}</h2>
             </div>

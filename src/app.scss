@@ -1,21 +1,104 @@
 /* * {
     border: 0.1rem solid black;
 } */
+$lightColor: #d3ff8c;
+$darkColor: #233800;
+$baseColor: #5e9900;
+$secondaryColor: #9dff00;
+
+$lightColor: #f1f4ff;
+$darkColor: #000f42;
+$baseColor: #07227a;
+$secondaryColor: #81898d;
+
+$lightColor: rgb(211, 164, 164);
+$darkColor: rgb(44, 0, 0);
+$baseColor: #83002c;
+$secondaryColor: #9c5e6c;
+
+$lightColor: rgb(228, 213, 213);
+$darkColor: rgb(7, 7, 7);
+$baseColor: #696969;
+$secondaryColor: #ffa1b9;
+
+$titleFont: "Questrial", sans-serif;
+$textFont: "Raleway", sans-serif;
+
+// Github Octocat =>
+
+.github-corner svg {
+    fill: $darkColor;
+    color: $lightColor;
+    position: absolute;
+    top: 0;
+    border: 0;
+    right: 0;
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+    20%,
+    60% {
+        transform: rotate(-25deg);
+    }
+    40%,
+    80% {
+        transform: rotate(10deg);
+    }
+}
+// <= Github Octocat
+
+.print-corner {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 0 0 8rem 8rem;
+    border-color: transparent transparent transparent $darkColor;
+    font-size: 2rem;
+    svg {
+        fill: $darkColor;
+        color: $lightColor;
+        position: relative;
+        top: 1rem;
+        right: 6.5rem;
+    }
+    &:hover:after {
+        content: "Print me !";
+        background-color: $lightColor;
+        padding: 0.5rem;
+        width: 10rem;
+        height: 3rem;
+        position: absolute;
+        top: 2rem;
+        left: -2rem;
+        border-radius: 0.5rem;
+    }
+}
 
 .app {
     text-align: center;
 }
 
 .app-background {
-    background-image: url("./img/background.jpg");
-    background-blend-mode: soft-light;
-    background-color: #462062;
+    //background-image: url("./img/backgroundlg.jpg");
+    background-image: linear-gradient(to bottom, $baseColor, $secondaryColor);
+    //background-blend-mode: soft-light;
+    background-color: $baseColor;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     min-height: 120vh;
-    font-size: calc(10px + 2vmin);
-    color: #462062;
+    //font-size: calc(10px + 2vmin);
+    color: $baseColor;
     z-index: -5;
 }
 
@@ -25,7 +108,7 @@
 }
 
 .nav {
-    padding: 2vh 5vw;
+    padding: 2vh 2vw;
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -33,35 +116,30 @@
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.7);
     margin: 0 auto 1rem auto;
-    .title {
-        font-size: 4rem;
-        text-shadow: 0.25rem 0 0 #462062, -0.25rem 0 0 #462062,
-            0 0.25rem 0 #462062, 0 -0.25rem 0 #462062, 0.12rem 0.12rem 0 #462062,
-            -0.12rem -0.12rem 0 #462062, -0.12rem 0.12rem 0 #462062,
-            0.12rem -0.12rem 0 #462062;
-    }
 }
 
 .profilePic {
-    width: 20vw;
-    border-radius: 50%;
-    border: 0.25rem solid white;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+    width: 15vw;
+    border-radius: 20%;
+    //border: 0.1rem solid white;
+    //box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
 }
-.title {
+.nav .title {
     text-align: center;
-    font-family: "Limelight", cursive;
-    color: white;
+    font-family: $titleFont; //"Limelight", cursive;
+    color: $baseColor;
+    font-size: 4rem;
+    text-shadow: 0.1rem 0 0 $lightColor, -0.1rem 0 0 $lightColor,
+        0 0.1rem 0 $lightColor, 0 -0.1rem 0 $lightColor,
+        0.05rem 0.05rem 0 $lightColor, -0.05rem -0.05rem 0 $lightColor,
+        -0.05rem 0.05rem 0 $lightColor, 0.05rem -0.05rem 0 $lightColor;
+    a,
     a:link,
     a:hover,
     a:visited,
     a:active {
-        color: white;
+        color: $baseColor;
         text-decoration: none;
-    }
-    a:hover {
-        color: #ddd;
-        transform: translate(0, -2px);
     }
 }
 
@@ -78,21 +156,21 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        border: 0.2rem solid #462062;
+        border: 0.2rem solid $baseColor;
         background-color: rgba(255, 255, 255, 0.3);
         a,
         a:link,
         a:hover,
         a:visited,
         a:active {
-            color: #462062;
+            color: $baseColor;
             text-decoration: none;
         }
         &:hover {
             a {
-                color: #6b3c8d;
+                color: $baseColor;
             }
-            transform: translate(0, -2px);
+            transform: scale(1, 1.2);
             background-color: rgba(255, 255, 255, 0.7);
         }
     }
@@ -102,78 +180,36 @@
     width: 80vw;
     margin: auto;
     position: relative;
-    color: #462062;
+    color: $baseColor;
     font-size: 1.8rem;
 }
 
-@mixin postItStyle(
-    $colorDark,
-    $colorLight,
-    $borderColor,
-    $textColor,
-    $rotation
-) {
-    margin: 20px;
-    padding: 10px;
-    font-family: "Caveat", cursive;
-    color: $textColor;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/$colorDark+82,d6c0d6+93,d6c0d6+100 */
-    position: relative;
-    width: 300px;
-    min-height: 300px;
-    border: 1px solid $borderColor;
-    border-top: 0.2rem outset $borderColor;
-    border-left: 0.2rem outset $borderColor;
-    border-bottom-right-radius: 60px 5px;
-    background: $colorDark; /* Old browsers */
-    background: -moz-linear-gradient(
-        -45deg,
-        $colorDark 82%,
-        $colorLight 93%,
-        $colorLight 100%
-    ); /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-        -45deg,
-        $colorDark 82%,
-        $colorLight 93%,
-        $colorLight 100%
-    ); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(
-        135deg,
-        $colorDark 82%,
-        $colorLight 93%,
-        $colorLight 100%
-    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colorDark', endColorstr='$colorLight',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    transform: rotate($rotation);
-    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.7);
+#skills .flex-row:not(:first-child) {
+    & > div {
+        width: 33%;
+        padding: 1rem;
+    }
+    & > div:not(:last-of-type) {
+        border-right: 0.2rem solid rgba($secondaryColor, 0.2);
+    }
     .title {
-        color: $textColor;
-        font-family: "Caveat", cursive;
-        font-size: 3rem;
-        margin: 5px;
+        color: $baseColor;
     }
-    .item {
-        font-weight: 700;
-        margin: 2px;
-        padding: 5px;
-        padding-right: 10px;
-        display: inline-block;
-        background-color: $textColor;
-        color: #ffffff;
+    a {
+        text-decoration: none;
+        padding: 0.5rem;
+        color: $lightColor;
+        background-color: $baseColor;
+        margin: 0.1rem;
     }
+}
+
+.other-skills {
+    margin-bottom: 2rem;
 }
 
 .post-it {
-    @include postItStyle(#d797db, #d7a0d6, #e49ed6, #462062, -2deg);
-}
-
-.post-it-pink {
-    @include postItStyle(#f48b97, #efa0a7, #e49ed6, #751148, 2deg);
-}
-
-.post-it-blue {
-    @include postItStyle(#8899ff, #99aaff, #9999ff, #0e0e7c, -1deg);
+    font-size: 1.8rem;
 }
 
 .items {
@@ -194,8 +230,8 @@ h5 {
 
 .year-bubble {
     background-color: rgb(255, 255, 255);
-    border: 0.4rem solid #462062;
-    border-radius: 50%;
+    border: 0.1rem solid $baseColor;
+    border-radius: 10%;
     margin: 1rem;
     min-width: 50px;
     min-height: 50px;
@@ -211,7 +247,7 @@ h5 {
     position: absolute;
     width: 4px;
     height: 100px;
-    background-color: #462062;
+    background-color: $baseColor;
     top: 100%;
 }
 
@@ -224,11 +260,30 @@ h5 {
     display: none;
 }
 
+.social-media {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    width: 40%;
+    span {
+        padding: 1rem;
+    }
+    a,
+    a:link,
+    a:hover,
+    a:visited,
+    a:active {
+        color: $baseColor;
+        text-decoration: none;
+        padding-left: 1rem;
+    }
+}
+
 .details {
     display: none;
     background-color: rgba(255, 255, 255, 0.8);
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     p {
@@ -252,7 +307,7 @@ h5 {
 .exp:hover {
     .details {
         display: block;
-        border: 0.5rem solid #462062;
+        border: 0.5rem solid $baseColor;
     }
 }
 
@@ -274,40 +329,48 @@ h5 {
         min-width: 15px;
         min-height: 15px;
         margin: 2.8rem;
-        background-color: #462062;
+        background-color: $baseColor;
     }
 }
 
 .align-end {
     justify-content: flex-end;
-    text-align: end;
+    text-align: right;
     .year-bubble {
         order: 2;
     }
 }
 
 .identity {
+    display: flex;
     padding: 2rem;
-    width: 80%;
+    width: 90%;
     margin: 2rem auto;
-    font-size: 2rem;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 2px 2px 1px #000;
-    p {
-        svg {
-            position: relative;
-            left: 0.5rem;
+    font-size: 1.5rem;
+    background-color: $lightColor;
+    div {
+        width: 33%;
+        img {
+            display: block;
+            margin: auto;
         }
-        span {
-            padding-left: 2rem;
+        p {
+            svg {
+                position: relative;
+                left: 0.5rem;
+            }
+            span {
+                padding-left: 2rem;
+            }
+            span:not(:first-of-type) {
+                padding-left: 3.3rem;
+            }
         }
     }
-    img {
-        float: right;
-        width: 40%;
-        max-width: 250px;
-    }
+}
+
+.cont-info {
+    display: none;
 }
 
 .project {
@@ -338,7 +401,7 @@ h2 {
         text-decoration: none;
         color: white;
         background-color: #222;
-        padding: 10px;
+        padding: 1rem;
         border-radius: 5px;
     }
 }
@@ -350,14 +413,12 @@ h3 {
 .tags {
     display: flex;
     flex-flow: row wrap;
-    .item {
-        font-weight: 700;
-        margin: 2px;
-        padding: 5px;
-        padding-right: 10px;
-        display: inline-block;
-        background-color: #462062;
-        color: #ffffff;
+    a {
+        text-decoration: none;
+        padding: 0.5rem;
+        color: $lightColor;
+        background-color: $baseColor;
+        margin: 0.1rem;
     }
 }
 
@@ -370,6 +431,9 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+    .profilePic {
+        width: 30vw;
+    }
     .flex-row {
         flex-direction: column;
         align-items: center;
@@ -378,7 +442,6 @@ h3 {
     .col-50 {
         align-content: center;
         justify-content: center;
-
         width: 100%;
         padding: 1rem;
         a {
@@ -389,9 +452,18 @@ h3 {
             }
         }
     }
+    #skills .flex-row:not(:first-child) > div {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 576px) {
+    .profilePic {
+        width: 50vw;
+    }
+    .navbar {
+        display: none;
+    }
     .nav,
     .content {
         width: 100%;
@@ -419,21 +491,214 @@ h3 {
         }
     }
     .identity {
-        padding: 1rem;
-        width: 95%;
+        width: 100vw;
+        position: relative;
         font-size: 1.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        div {
+            width: 100%;
+        }
         p {
             width: 100%;
             span:not(:first-of-type) {
                 padding-left: 3.3rem;
             }
         }
-        img {
-            clear: both;
+        .social-media {
+            padding: 0;
+            span {
+                padding-left: 0.5rem;
+            }
+        }
+        .profilePic {
+            display: none;
+        }
+    }
+    .github-corner:hover .octo-arm {
+        animation: none;
+    }
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+    }
+}
+
+@media print and (min-width: 200px) and (max-width: 1200px) {
+    .post-it {
+        font-size: 1rem;
+    }
+    .github-corner,
+    .print-corner {
+        display: none;
+    }
+    .cont-info {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3rem;
+        p {
+            margin: 0.5rem 0;
+            display: flex;
+            flex-flow: row wrap;
+            span {
+                padding-left: 1rem;
+            }
+            span:not(:first-of-type) {
+                padding-left: 2.2rem;
+            }
+        }
+    }
+    #projects {
+        display: none;
+    }
+    .navbar {
+        display: none;
+    }
+    .nav {
+        width: 100%;
+        .title {
+            margin-top: 0;
+            text-shadow: none;
+            font-size: 3rem;
+            text-align: right;
+        }
+        span {
+            display: block;
+            text-align: right;
+        }
+        span:before {
+            content: "";
+        }
+        .flex-row {
+            width: 100%;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        h5 {
+            font-size: 1rem;
+            margin: 0;
+            text-align: right;
+        }
+        .title-block {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 40%;
+        }
+    }
+    #skills .flex-row {
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    #experiences .flex-row {
+        flex-flow: row nowrap;
+        .col-50 {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    #about .flex-row {
+        flex-flow: row nowrap;
+        align-items: start;
+        font-size: 1.3rem;
+        .col-50:first-of-type {
             width: 50%;
         }
+    }
+    .blockquote,
+    .element {
+        &:before {
+            content: "";
+        }
+    }
+    .identity {
+        display: none;
+    }
+    .wrapper {
+        padding: 0;
+    }
+    .content {
+        width: 100%;
+        padding: 0;
+    }
+    h2 {
+        margin: 0;
+        text-align: left;
+        padding: 0;
+        font-size: 1em;
+    }
+    .exp {
+        width: 100%;
+        p {
+            margin: 0;
+            padding: 0 1rem;
+            font-size: 1.3rem;
+        }
+        height: 6rem;
+        margin: 0;
+        padding: 0;
+        border-bottom: 0.1rem solid grey;
+        .bold {
+            font-size: 1.2rem;
+        }
+    }
+    .year-bubble {
+        min-width: auto;
+        min-height: auto;
+        border: 0;
+        background-color: transparent;
+    }
+    .year-bubble::after {
+        display: none;
+    }
+    .hide {
+        display: none;
+    }
+    .col-50 {
+        align-content: center;
+        justify-content: center;
+
+        width: 100%;
+        padding: 1rem;
+        a {
+            img {
+                margin: auto;
+                display: block;
+                width: 50%;
+            }
+        }
+    }
+    body {
+        width: auto !important;
+        margin: auto !important;
+        font-family: serif;
+        font-size: 12pt;
+        background-color: #fff !important;
+        color: $baseColor !important;
+    }
+    .print {
+        display: block; /* affichage des éléments de classe print */
+    }
+    p,
+    blockquote {
+        orphans: 3; /* pas de ligne seule en bas */
+        widows: 3; /* pas de ligne seule en haut */
+    }
+    blockquote,
+    ul,
+    ol {
+        page-break-inside: avoid; /* pas de coupure dans ces élements */
+    }
+    h1 {
+        page-break-before: always; /* chaque titre commence sur une nouvelle page */
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    caption {
+        page-break-after: avoid; /* pas de saut après ces éléments */
     }
 }

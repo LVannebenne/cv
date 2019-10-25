@@ -4,7 +4,7 @@ import Identity from "./identity";
 
 export default function about() {
     return (
-        <div className={"wrapper"}>
+        <div id={"about"} className={"wrapper"}>
             <div className={"flex-row"}>
                 <div className={"col-50"}>
                     <div className={"goals"}>

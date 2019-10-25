@@ -94,6 +94,8 @@
       "Apache2",
       "PhpMyAdmin",
       "GitHub",
+      "Agile",
+      "Scrum",
       "Bootstrap",
       "REST Api"
     ],
@@ -102,11 +104,10 @@
       "NoSQL",
       "MongoDB",
       "Laravel",
-      "React.js",
-      "Node.js",
-      "Vue.js",
+      "React.JS",
+      "Node.JS",
+      "Vue.JS",
       "React Native",
-      "Angular 7",
       "Docker",
       "Symphony",
       "Twig",
@@ -145,7 +146,10 @@
       "postCode": "4020",
       "city": "Liège",
       "phone": "0497/19.30.48",
-      "email": "lindsay.vannebenne@gmail.com"
+      "email": "lindsay.vannebenne@gmail.com",
+      "linkedIn": "https://www.linkedin.com/in/lvannebenne/",
+      "twitter": "https://twitter.com/EmelseaDestiny",
+      "github": "https://github.com/LVannebenne"
     },
     "subsides": ["APE", "SESAM", "SINE", "PFI"],
     "projects": [
@@ -202,7 +206,7 @@
         "dateStart": "02/09/2019"
       },
       {
-        "title": "vCard on NPM",
+        "title": "vCard with npx",
         "description": "vCard in console (use npx @lvannebenne/vcard to display). Click on image to see the package on npmjs.com",
         "technologies": ["Node.Js"],
         "url": "www.npmjs.com/package/@lvannebenne/vcard",
