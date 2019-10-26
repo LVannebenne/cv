@@ -84,6 +84,10 @@ $textFont: "Raleway", sans-serif;
     }
 }
 
+.qr-code {
+    display: none;
+}
+
 .app {
     text-align: center;
 }
@@ -496,12 +500,13 @@ h3 {
         }
     }
     .identity {
-        width: 100vw;
+        width: 90vw;
         position: relative;
         font-size: 1.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 1rem;
         div {
             width: 100%;
         }
@@ -535,6 +540,9 @@ h3 {
 @media print and (min-width: 200px) and (max-width: 1200px) {
     .post-it {
         font-size: 1rem;
+        h4 {
+            margin: 0.2rem;
+        }
     }
     .github-corner,
     .print-corner {
@@ -564,6 +572,8 @@ h3 {
     }
     .nav {
         width: 100%;
+        padding: 0;
+        border-bottom: 0.1rem solid $baseColor;
         .title {
             margin-top: 0;
             text-shadow: none;
@@ -606,12 +616,20 @@ h3 {
             padding: 0;
         }
     }
-    #about .flex-row {
+    #about .flex-row:not(:first-of-type) {
         flex-flow: row nowrap;
         align-items: start;
         font-size: 1.3rem;
         .col-50:first-of-type {
-            width: 50%;
+            width: 70%;
+        }
+        h4 {
+            margin: 0;
+        }
+        .element,
+        .blockquote {
+            padding: 0.2rem;
+            text-align: justify;
         }
     }
     .blockquote,
@@ -666,7 +684,6 @@ h3 {
     .col-50 {
         align-content: center;
         justify-content: center;
-
         width: 100%;
         padding: 1rem;
         a {
@@ -680,26 +697,8 @@ h3 {
     body {
         width: auto !important;
         margin: auto !important;
-        font-family: serif;
-        font-size: 12pt;
         background-color: #fff !important;
         color: $baseColor !important;
-    }
-    .print {
-        display: block; /* affichage des éléments de classe print */
-    }
-    p,
-    blockquote {
-        orphans: 3; /* pas de ligne seule en bas */
-        widows: 3; /* pas de ligne seule en haut */
-    }
-    blockquote,
-    ul,
-    ol {
-        page-break-inside: avoid; /* pas de coupure dans ces élements */
-    }
-    h1 {
-        page-break-before: always; /* chaque titre commence sur une nouvelle page */
     }
     h1,
     h2,
@@ -708,5 +707,13 @@ h3 {
     h5,
     caption {
         page-break-after: avoid; /* pas de saut après ces éléments */
+    }
+    .qr-code {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 20vw;
+        z-index: 10;
     }
 }

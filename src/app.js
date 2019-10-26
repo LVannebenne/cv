@@ -6,10 +6,12 @@ import Header from "./components/header";
 import Experiences from "./components/experiences";
 import About from "./components/about";
 import Projects from "./components/projects";
+import QRCode from "./img/QR.png";
 
 function App() {
     return (
         <div className={"app-background"}>
+            <img className={"qr-code"} src={QRCode} />
             <Router>
                 <Header />
                 <Switch>
