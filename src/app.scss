@@ -540,6 +540,8 @@ h3 {
 @media print and (min-width: 200px) and (max-width: 1200px) {
     .post-it {
         font-size: 1rem;
+        padding: 0;
+        margin: 0;
         h4 {
             margin: 0.2rem;
         }
@@ -571,16 +573,18 @@ h3 {
         display: none;
     }
     .nav {
+        font-size: 0.8rem;
         width: 100%;
-        padding: 0;
+        padding: 0 0 1rem 0;
         border-bottom: 0.1rem solid $baseColor;
         .title {
             margin-top: 0;
             text-shadow: none;
-            font-size: 3rem;
+            font-size: 2.4rem;
             text-align: right;
         }
         span {
+            font-size: 1rem;
             display: block;
             text-align: right;
         }
@@ -601,13 +605,16 @@ h3 {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            width: 40%;
+            width: 45%;
         }
     }
-    #skills .flex-row {
-        flex-flow: row wrap;
-        align-items: flex-start;
-        justify-content: center;
+    #skills {
+        .flex-row {
+            flex-flow: row wrap;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        border-bottom: 0.1rem solid $baseColor;
     }
     #experiences .flex-row {
         flex-flow: row nowrap;
@@ -620,11 +627,12 @@ h3 {
         flex-flow: row nowrap;
         align-items: start;
         font-size: 1.3rem;
-        .col-50:first-of-type {
-            width: 70%;
+        .col-50 {
+            //width: 70%;
+            padding-left: 0;
         }
         h4 {
-            margin: 0;
+            margin: 0.5rem 0 0;
         }
         .element,
         .blockquote {
@@ -650,9 +658,10 @@ h3 {
     }
     h2 {
         margin: 0;
+        margin-top: 0.5rem;
         text-align: left;
         padding: 0;
-        font-size: 1em;
+        font-size: 1.2rem;
     }
     .exp {
         width: 100%;
@@ -697,8 +706,6 @@ h3 {
     body {
         width: auto !important;
         margin: auto !important;
-        background-color: #fff !important;
-        color: $baseColor !important;
     }
     h1,
     h2,

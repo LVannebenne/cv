@@ -18,6 +18,14 @@ export default function about() {
                             </div>
                         ))}
                     </div>
+                    <div className={"qualities"}>
+                        <h4 className={"title"}>{"Qualities"}</h4>
+                        {data.qualities.map(elem => (
+                            <div className={"element"} key={elem}>
+                                {elem}
+                            </div>
+                        ))}
+                    </div>
                 </div>
                 <div className={"col-50"}>
                     <div className={"other-skills"}>
