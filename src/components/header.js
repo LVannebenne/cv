@@ -4,6 +4,7 @@ import Navbar from "./navbar";
 import {Link} from "react-router-dom";
 import {data} from "../data.json";
 import dateOfBirth from "../utils";
+import cvpdf from "../img/cv-lindsay-vannebenne.pdf";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
     faPhoneSquare,
@@ -17,7 +18,7 @@ import {
 export default function header() {
     return (
         <div className={"nav"}>
-            <div className={"print-corner"} onClick={() => window.print()}>
+            <div className={"print-corner"} onClick={() => window.open(cvpdf)}>
                 <FontAwesomeIcon icon={faPrint} />
             </div>
             <div className={"flex-row"}>
