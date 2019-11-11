@@ -1,4 +1,4 @@
-Hello ! Welcome on my resume :)
+## Hello ! Welcome on my resume :)
 
 This project is not intended to be run, but if you want to inspire from it, feel free to do it :)
 
@@ -6,4 +6,10 @@ It has been started with create-react-app and can be downloaded and launched wit
 
 ```
 npm run dev
+```
+
+or 
+
+```
+npm run build
 ```
