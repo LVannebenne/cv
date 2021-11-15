@@ -7,10 +7,24 @@
     ],
     "workExperience": [
       {
+        "year": "Now",
+        "description": "Junior Back-end developper ",
+        "location": "EPIC Web Agency",
+        "details": [
+          "From showcase websites to complex apps",
+          "Wordpress with a massive dose of customisation",
+          "We speak CI and automation of procedures",
+          "Some Ruby / Rails for internal apps and scripts",
+          "Lot of infrastructure work, migration to Kubernetes"
+        ]
+      },
+      {
         "year": 2019,
         "description": "Trainee - Junior web developper ",
-        "location": "... in your company ? ",
-        "details": "Looking for a great trainee position, motivated to learn-a-lot with great people."
+        "location": "EPIC Web Agency",
+        "details": [
+          "Learning the hard way, but the good one."
+        ]
       },
       {
         "year": 2018,
@@ -46,6 +60,12 @@
       }
     ],
     "training": [
+      {
+        "year": 2021
+      },
+      {
+        "year": 2020
+      },
       {
         "year": 2019,
         "description": "Junior web developper",
@@ -97,10 +117,14 @@
       "Agile",
       "Scrum",
       "Bootstrap",
-      "REST Api"
+      "REST Api",
+      "Docker",
+      "Twig",
+      "PostgreSQL",
+      "Nginx"
     ],
     "skillsExperience": [
-      "PostgreSQL",
+      "Kubernetes",
       "NoSQL",
       "MongoDB",
       "Laravel",
@@ -108,26 +132,21 @@
       "Node.JS",
       "Vue.JS",
       "React Native",
-      "Docker",
       "Symphony",
-      "Twig",
       "TypeScript",
-      "GraphQL"
+      "GraphQL",
+      "AWS"
     ],
     "skillsLearn": [
       "Python",
       "Go",
-      "AWS",
       "Drupal",
       "Electron",
-      "Kubernetes",
       "Cloudflare",
       "And many others..."
     ],
     "goals": [
-      "I am currently looking for a junior back-end or fullstack junior web developer position as a priority.",
-      "However, I am interested in developing my front-end skills as well.",
-      "I would like to gain more experience and work on various projects.",
+      "I would like to gain more experience with a lot of technologies",
       "I have strong affinity with databases and large-scale data manipulation."
     ],
     "qualities": [
