@@ -10,9 +10,10 @@ function project(props) {
             <h3>{props.data.title}</h3>
             <div className={"flex-row"}>
                 <div className={"col-50"}>
-                    <a href={`http://${props.data.url}`} target={"_blank"}>
+                    <a href={`http://${props.data.url}`} target={"_blank"} rel="noopener noreferrer">
                         <img
                             src={`https://api.miniature.io/?token=c0l7n175eYyLkn9d&width=300&height=200&url=${props.data.url}`}
+                            alt={""}
                         />
                     </a>
                 </div>
@@ -25,7 +26,7 @@ function project(props) {
                     )}
 
                     <p>{`Started @ ${props.data.dateStart}`}</p>
-                    <a className={"github"} href={props.data.repository}>
+                    <a className={"github"} href={props.data.repository} target={"_blank"} rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faGithub} />
                         {" Github Repository"}
                     </a>

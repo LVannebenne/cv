@@ -21,7 +21,7 @@ export default function header() {
             <div className={"print-corner"} onClick={() => window.open(cvpdf)}>
                 <FontAwesomeIcon icon={faPrint} />
             </div>
-            <div className={"flex-row"}>
+            <div className={"flex-row align-center"}>
                 <div className={"cont-info"}>
                     <p>
                         <FontAwesomeIcon icon={faIdCard} />
@@ -69,9 +69,9 @@ export default function header() {
                             <span key={sentence}>{sentence}</span>
                         ))}
                     </h5>
+                    <Navbar />
                 </div>
             </div>
-            <Navbar />
         </div>
     );
 }

@@ -111,6 +111,10 @@ $textFont: "Raleway", sans-serif;
     justify-content: center;
 }
 
+.align-center {
+    align-items: center;
+}
+
 .nav {
     padding: 2vh 2vw;
     width: 80vw;
@@ -125,9 +129,8 @@ $textFont: "Raleway", sans-serif;
 .profilePic {
     width: 15vw;
     border-radius: 20%;
-    //border: 0.1rem solid white;
-    //box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
 }
+
 .nav .title {
     text-align: center;
     font-family: $titleFont; //"Limelight", cursive;
@@ -152,16 +155,15 @@ $textFont: "Raleway", sans-serif;
     flex-direction: row;
     justify-content: center;
     padding: 10px;
+    margin-top: 5rem;
     div {
         font-size: 1.8rem;
         padding: 1rem;
-        margin: 0.2rem;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        border: 0.2rem solid $baseColor;
-        background-color: rgba(255, 255, 255, 0.3);
+        border-right: 0.2rem solid $baseColor;
         a,
         a:link,
         a:hover,
@@ -174,9 +176,13 @@ $textFont: "Raleway", sans-serif;
             a {
                 color: $baseColor;
             }
-            transform: scale(1, 1.2);
-            background-color: rgba(255, 255, 255, 0.7);
+            transform: translate(1.2);
+            background-color: rgba(255, 255, 255, 0.2);
         }
+    }
+
+    div:last-of-type {
+        border-right: none;
     }
 }
 
@@ -190,7 +196,7 @@ $textFont: "Raleway", sans-serif;
 
 #skills .flex-row:not(:first-child) {
     & > div {
-        width: 33%;
+        min-width: 33%;
         padding: 1rem;
     }
     & > div:not(:last-of-type) {
@@ -204,7 +210,9 @@ $textFont: "Raleway", sans-serif;
         padding: 0.5rem;
         color: $lightColor;
         background-color: $baseColor;
-        margin: 0.1rem;
+        margin: 0.2rem;
+        border-radius: 10px;
+        padding: 5px 10px;
     }
 }
 
@@ -350,7 +358,7 @@ h5 {
     justify-content: space-between;
     padding: 2rem;
     width: 90%;
-    margin: 2rem auto;
+    margin: 4rem auto;
     font-size: 1.5rem;
     background-color: $lightColor;
     div {
@@ -419,7 +427,9 @@ h3 {
         padding: 0.5rem;
         color: $lightColor;
         background-color: $baseColor;
-        margin: 0.1rem;
+        margin: 0.2rem;
+        border-radius: 10px;
+        padding: 5px 10px;
     }
 }
 
@@ -427,7 +437,7 @@ h3 {
 .blockquote {
     padding: 10px 0 5px;
     &:before {
-        content: "- ";
+        content: "• ";
     }
 }
 

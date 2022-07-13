@@ -11,7 +11,7 @@ import QRCode from "./img/QR.png";
 function App() {
     return (
         <div className={"app-background"}>
-            <img className={"qr-code"} src={QRCode} />
+            <img className={"qr-code"} src={QRCode} alt={"QR code"}/>
             <Router>
                 <Header />
                 <Switch>
